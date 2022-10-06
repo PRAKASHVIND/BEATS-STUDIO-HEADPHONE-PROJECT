@@ -1,0 +1,785 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  position: relative;
+  overflow: hidden;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+#nav {
+  height: 10vh;
+  width: 100%;
+  /* background-color: rgb(255, 221, 227); */
+  background-color: white;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 5%;
+}
+#part1 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+#part1 > h3 {
+  border: 1px solid black;
+  margin-left: 5%;
+  padding: 2% 10%;
+  border-radius: 50px;
+}
+.menuuu{
+  font-size: 30px;
+}
+#part1 > h3:hover {
+  background-color:red;
+  cursor: pointer;
+  color: white;
+  transition: all ease 0.5s;
+}
+#part2 {
+  font-size: 2.5vh;
+}
+#part2 > i {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+#mainpart1 {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 10vh);
+  /* background-color: rgb(255, 221, 227); */
+  background-color: white;
+}
+#mainpart1 > h1 {
+  font-size: 15vh;
+  padding: 0% 15%;
+  opacity: 0;
+  color: red;
+  animation-name: abc;
+  animation-duration: 1s;
+  position: relative;
+  animation-fill-mode: forwards;
+}
+span{
+  color: black;
+}
+
+@keyframes abc {
+  from {
+    opacity: 0;
+    
+    transform: translatex(-40%);
+  }
+  to {
+    opacity: 1;
+  
+    transform: translatex(0);
+
+  }
+}
+
+#border1 {
+  height: 72vh;
+  width: 175vh;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#photu1 {
+  position: absolute;
+  height: 66vh;
+  width: 170vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1613485511406-ad341f28009d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+#mainpart2{
+  height: 100vh;
+  width: 100%;
+ display: flex;
+ 
+}
+#first{position: relative;
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+}
+#second{position: relative;
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+}
+#blackline{
+  position: relative;
+  margin-left:13%;
+  margin-top: 10%;
+  height: 65%;
+  width: 55%;
+ border: 1px solid black;
+}
+#photuA{
+  margin: 5%;
+  height: 110%;
+  width: 120%;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1593359863503-f598684c806f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+  position: relative;
+}
+#explore{
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  height: 10%;
+  width: 35%;
+  border-radius: 200%;
+  background-color: greenyellow;
+  border: 1px solid black;
+  font-size: 25px;
+  font-weight: 90;
+}
+#explore:hover{
+  cursor: pointer;
+  background-color: rgb(255, 88, 28);
+}
+#second>h1{
+ padding: auto;
+ margin-top: 10%;
+  font-size:96px;
+  top: 6%;
+  left: 30%;
+  line-height: 80px;
+  text-align: center;
+  font-weight:200;
+}
+#second>p{
+  font-size: 5ps;
+  width: 42%;
+  padding: auto;
+  margin-top: 5%;
+  margin-left: 30%;
+
+}
+#borderbb{
+  height: 30%;
+  width: 38%;
+  border: 1px solid black;
+  margin-left: 50%;
+  margin-top: 10%;
+  position: relative;
+}
+#photuu2{
+  height: 115%;
+  width: 120%;
+  margin-left: -30%;
+  margin-top: 10%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://media.istockphoto.com/photos/joyful-emotion-concept-guy-in-headphones-dances-to-favorite-music-and-picture-id1256459577?k=20&m=1256459577&s=612x612&w=0&h=PLXajn13cllROE_DSyeF1E_ZrKrhR1g4Xdu868WiwUQ=);
+}
+
+#mainpart3{
+  height: 100vh;
+  width: 100%;
+  /* background-color: beige; */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+#center{
+  height: 60%;
+  width: 100%;
+  /* background-color: brown; */
+  background-image: url(https://img.freepik.com/free-photo/aesthetic-minimal-white-grid-pattern-wallpaper_53876-96916.jpg?w=2000);
+  position: relative;
+  background-position: center;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: none;
+  border-top:4px solid black ;
+  border-bottom: 4px solid black;
+}
+
+/* #mainpart3>h2{} */
+
+.cards{
+  height: 80%;
+  width: 20%;
+  margin-left: 520px;
+  background-color: transparent;
+ margin: 6%;
+ position: relative;
+
+}
+
+#card1{
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* background-color: blueviolet; */
+  background-image: url(https://images.unsplash.com/photo-1628210889224-53b2e3082fc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  position: relative;
+  border: 5px solid rgb(234, 160, 49);
+  object-fit: cover;
+  
+}
+#buynow{font-size: 22px;
+  padding: 13px 82px;
+  background-color: greenyellow;
+  border: 1px solid black;
+  margin:0px 10%;
+  position: absolute;
+  margin-top: -5%;
+  
+}
+.cards:nth-child(2) #card1{
+  background-image: url(https://media.istockphoto.com/photos/red-headphones-on-yellow-background-music-concept-picture-id1227291084?k=20&m=1227291084&s=612x612&w=0&h=dia7ldwIeyFEmfvTDVNv149gOyFThw-SHzhmPMpYyGY=);
+}
+
+.cards:nth-child(3) #card1{
+  background-image: url(https://media.istockphoto.com/photos/headphones-on-vibrant-colorful-background-poster-picture-id1147815475?k=20&m=1147815475&s=612x612&w=0&h=3hUmh87Ksili51JTBy3n4sGBfOd1LrSK72l8byhbhkE=);
+}
+#buynow:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#mainpart4{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-top: 1px solid transparent;
+}
+#mainpart4 h1{
+  font-size: 72px;
+  margin-top: 2%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+#mainpart4 h1 span{
+  display: block;
+}
+.wrotedimg{
+height: 15vh;
+width: 100%;
+border-bottom: 1px solid black;
+border-top: 1px solid black;
+margin-top: 10%;
+position: relative;
+margin-bottom: -10%;
+}
+.wrotedimg>h3{
+  justify-content: center;
+  position: absolute;
+  margin: 3%;
+  font-size: 25px;
+  font-family: gilroy;
+}
+.wrotedimg>h2{
+ /* margin: 2%; */
+ font-family: gilroy;
+ font-size: 40px;
+ position: absolute;
+ top: 26%;
+ left: 50%;
+
+}
+.wroted1{
+  height: 115%;
+  width: 9%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+      background-image: url(https://media.istockphoto.com/photos/gorgeous-blonde-hipster-girl-wearing-sunglasses-enjoys-the-music-picture-id1279900913?k=20&m=1279900913&s=612x612&w=0&h=LM7wWoZUDzz_j_OqpNsAkphzycYnjaXAsE2HDwA5niM=);
+  margin-left: 22%;
+  transform: rotate(15deg);
+  opacity: 0;
+}
+ .wrotedimg:hover .wroted1{
+  cursor: pointer;
+  opacity: 1;
+z-index: 99999999999;
+} 
+
+.aerow{
+  font-size: 60px;
+  position: absolute;
+ top: 30%;
+ right: 5%;
+ transform: rotate(-25deg);
+}
+
+.wrotedimg:hover .aerow{
+  cursor: pointer;
+  transform: rotate(360deg);
+  color: orangered;
+}
+#mainpart5{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+#main5left{
+  height: 100vh;
+  width: 50%;
+  position: relative;
+}
+#main5right{position: relative;
+  height: 100vh;
+  width: 50%;
+}
+
+#main5left>h1{position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 62px;
+  text-align: center;
+}
+#span2{
+  color: red;
+}
+#main5left>p{position: absolute;
+  top: 26%;
+  left: 50%;
+  width: 60%;
+  height: 25%;
+  transform: translate(-50%,0);
+  font-size: 16px;
+ line-height: 23px;
+ text-align: justify;
+}
+
+#main5border{
+  height: 35%;
+  width: 40%;
+  top: 48%;
+  left: 19%;
+  position: absolute;
+  border: 1px solid black;
+}
+#main5photu{
+  height: 110%;
+  width: 110%;
+  margin:6% 6%;
+  background-position: center;
+  background-size: cover;
+ background-image: url(https://media.istockphoto.com/photos/black-headphones-on-black-wooden-dark-background-picture-id936276944?k=20&m=936276944&s=612x612&w=0&h=eZcHkB_yYChA3dc07S1jDD0QWTrCh0VNiCTzoqip2jE=);
+  position: relative;
+}
+
+#button2{position: absolute;
+  top: 70%;
+  left: 80%;
+  height: 13%;
+  width: 38%;
+  border-radius: 200%;
+  background-color: greenyellow;
+  border: 1px solid black;
+  font-size: 25px;
+  font-weight: 90;
+  padding: 6px 9px;
+}
+#main5border2{position:absolute;
+  height: 60%;
+  top: 15%;
+  left: 36%;
+  width: 40%;
+  border: 1px solid black;
+}
+#main5borderIMG{
+  height: 120%;
+  width: 130%;
+  position: absolute;
+  margin-left: -39%;
+  margin-top: 10%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1557315360-6a350ab4eccd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+  
+}
+
+#navroller{
+  width: 100%;
+  height: 10vh;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 27px;
+}
+#navroller>h5{
+ font-size: 20px;
+animation: anem;
+margin-left:-26px;
+animation-duration: 1s;
+animation-fill-mode: initial;
+animation-iteration-count: infinite;
+padding: 0 10px;
+animation-delay: 2s;
+animation-timing-function: linear;
+/* background-color: aqua; */
+}
+
+@keyframes anem{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-100%);
+  }
+  
+}
+#mainpart6{
+  height:100vh;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid transparent;
+}
+
+#container{
+  height: 100vh;
+  width: 100%;
+  position:relative;
+  display: flex;
+  border-top: 1px solid transparent;
+}
+#main6left{
+  height: 100vh;
+  width: 70%;
+}
+#main6right{
+  height: 100vh;
+  width: 30%;
+  position: relative;
+}
+#main6left>h1{
+  font-size: 40px;
+  margin-left: 10%;
+  margin-top: 3%;
+  line-height: 47px;
+}
+#main6border{
+  height: 55%;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 3%;
+  border: 1px solid black;
+}
+#main6left>h2{
+  position: absolute;
+  top: 95vh;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 36px;
+}
+#main6photu{
+  height: 92%;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 2%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1630713815198-17ff8a8a7103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+#orangecircle{
+  height: 25%;
+  width: 40%;
+  border-radius: 50%;
+  /* background-color: orangered; */
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1575975243243-5462a2054ed2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  margin-top: 8%;
+  margin-left: 27%;
+}
+
+#righttexts{
+  position: relative;
+  height: 50%;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+#righttexts>h2{position: absolute;
+  text-align: center;
+  font-size: 36px;
+ transform: translate(-50%,-50%);
+ top: 15%;
+ left: 50%;
+}
+#righttexts>p{
+  position: absolute;
+  top: 22%;
+  margin-top: 15%;
+  margin-left: 20%;
+  line-height: 22px;
+  width:70% ;
+  font-size: 17px;
+}
+#mainpart7{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+
+#part7top{
+ margin-left: 7%;
+  margin-top: 3%;
+  height: 55%;
+  width: 100%;
+  display: flex;
+ gap: 80px;
+  background-color:white;
+  position: relative;
+}
+.part7card:nth-child(2){
+  background-image: url(https://media.istockphoto.com/photos/woman-with-fluorescent-makeup-listening-to-music-picture-id1186871413?k=20&m=1186871413&s=612x612&w=0&h=jPuwiLNSHcdgckG9OaaOcu3F8rgjN0j-jg_jtVV6r9Q=);
+}
+
+.part7card{
+  height: 65%;
+  width: 23%;
+ background-position: center;
+ background-size: cover;
+ background-image: url(https://media.istockphoto.com/photos/girl-with-fluorescent-paint-and-headphones-picture-id1025979412?k=20&m=1025979412&s=612x612&w=0&h=rZ5m_rS7_qv3BGyn0KTsAyJaHBu1nKRuKrbyPnxwSg4=);
+}
+#part7navbar{
+  height: 5%;
+  width: 100%;
+  background-color: white;
+}
+
+#part7middle{
+  height: 75%;
+  width: 30%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+#part7top>p{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 82%;
+  left: 45%;
+  font-size: 15px;
+
+}
+#part7bottom{
+  height: 40%;
+  width: 100%;
+  display: flex;
+}
+#part7left{
+  height: 100%;
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#part7right{
+  border: 1px solid black;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#part7text1{
+  height: 90%;
+  width: 40%;
+  display: flex;
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#part7text2{
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: 90%;
+  width: 40%;
+}
+#part7text1>h1{
+  margin-top: 8%;
+  margin-left: 15%;
+  font-size: 25px;
+ 
+}
+
+.discription{
+  margin-top: 28%;
+  height: 70%;
+  width: 80%;
+}
+.discription2{
+  margin-top: 28%;
+  height: 70%;
+  width: 80%;
+}
+.discription>h4{
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: underline;
+}
+.discription2>h4{
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: underline;
+}
+
+.discription>h5{
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: underline;
+}
+.discription2>h5{
+  font-size: 18px;
+  line-height: 40px;
+  text-decoration: underline;
+}
+#part7text1>h1{
+  position: absolute;
+  left: 10%;
+  top: 2%;
+}
+#part7text2>h1{
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  font-size: 25px;
+}
+#part7righttext{
+  height: 80%;
+  width: 80%;
+  border-bottom: 2px solid black;
+}
+#part7rightnav{
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
+}
+
+#part7nevh3{
+display: flex;
+gap: 20px;
+
+}
+#part7nevh3>h3{
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+#part7nevh3>h3:hover{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.part7search{
+  font-size: 18px;
+  height: 35px;
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
+  border:1px solid black;
+  background-color: white;
+}
+#part7righttext>h4{
+  margin-top: 1%;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+  height: 12%;
+  width: 25%;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+#part7righttext>h4:hover{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+#part7righttext>h1{
+  font-size: 25px;
+  margin-top: 12%;
+}
+#part7rightbuttomnav{
+  margin-bottom: 5%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#part7rightbuttomnav>p{
+  font-size: 18px;
+}
+.rightarrow{
+  font-size: 50px;
+}
+
+#part7navbar{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+#part7navpart1{
+  margin-left: 5%;
+  display: flex;
+  font-size: 20px;
+  gap: 10px;
+}
+#part7navpart1>p{
+  font-size: 15px;
+}
+
+#part7navpart3{
+  margin-right: 5%;
+  font-size: 25px;
+  gap: 12px;
+  display: flex;
+}
+
+#second h1 span{
+  display: block;
+}
+#mainpart4 span{
+  display: block;
+}
